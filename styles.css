@@ -7,11 +7,13 @@ body {
   font-size: 20px;
   color: #131921;
 }
+
 .section {
   position: relative;
   width: 100%;
   overflow-y: hidden;
 }
+
 .container {
   margin: 0 auto;
   padding: 30px 60px;
@@ -24,6 +26,7 @@ body {
     rgb(255, 255, 231) 100.2%
   );
 }
+
 h1 {
   margin: 0;
   font-size: 34px;
@@ -31,6 +34,7 @@ h1 {
   color: #0e5d6f;
   text-align: center;
 }
+
 h2 {
   font-size: 30px;
   font-weight: 400;
@@ -77,14 +81,17 @@ img {
   height: 100%;
   object-fit: cover;
 }
+
 p {
   margin: 60px auto 30px;
   text-align: center;
   line-height: 30px;
 }
+
 span {
   color: #0e5d6f;
 }
+
 span:hover {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>🐘</text></svg>")
       16 0,
@@ -95,20 +102,24 @@ a {
   text-decoration: none;
   color: #0e5d6f;
 }
+
 a:hover {
   text-decoration: underline;
   border-radius: 8px;
 }
+
 ul {
   line-height: 22px;
   list-style: circle;
   padding: 0;
 }
+
 li {
   line-height: 30px;
   transition: background-color 0.3s ease, color 0.3s ease;
   position: relative;
 }
+
 li:hover {
   background-color: #a9f0bd; /* Змінюємо фон при наведенні */
   cursor: pointer; /* Змінюємо курсор на "вказівник" */
@@ -172,6 +183,7 @@ button {
   color: #0e5d6f;
   transition: all 100ms ease;
 }
+
 button:hover {
   background: #b3e6f2;
   border: 2.5px solid #052d36;
@@ -180,10 +192,12 @@ button:hover {
   cursor: pointer;
   transform: translateY(-5px);
 }
+
 strong {
   display: block;
   text-align: center;
 }
+
 .cover {
   display: none;
   justify-content: center;
@@ -203,6 +217,7 @@ strong {
   border: 1px solid transparent;
   border-radius: 20px;
 }
+
 .modal {
   width: 550px;
   height: 200px;
@@ -211,15 +226,18 @@ strong {
   border: 1px solid #052d36cb;
   border-radius: 20px;
 }
+
 .cover.active {
   display: flex;
 }
+
 .options-modal {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
+
 .elephant-answer,
 .whale-answer {
   border-radius: 20px;
@@ -227,6 +245,7 @@ strong {
   width: 600px;
   background: #e6c5db;
 }
+
 .elephant-answer:hover,
 .whale-answer:hover {
   background: #7ccbdc;
@@ -234,6 +253,7 @@ strong {
   font-weight: normal;
   border-color: #ffffff;
 }
+
 .jumper {
   width: 500px;
   height: 700px;
@@ -243,10 +263,12 @@ strong {
   bottom: -700px;
   transition: all 2s ease-in-out;
 }
+
 .jumper.active {
   bottom: -200px;
   cursor: pointer;
 }
+
 .jumper img {
   background: transparent;
   width: 500px;
