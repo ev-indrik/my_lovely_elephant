@@ -57,7 +57,7 @@ h2 {
   height: 500px;
   width: 400px;
   box-shadow: 10px 7px 10px #0e5d6f4f;
-  border-color: #0e6f1e; /* Змінюємо лише колір кордону */
+  border-color: #0e6f1e;
   border-width: 2px;
 }
 
@@ -102,21 +102,33 @@ a:hover {
 ul {
   line-height: 22px;
   list-style: circle;
+  padding: 0;
 }
 li {
-  line-height: 22px;
+  line-height: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
 }
 li:hover {
-  background-color: #a9f0bd;
-  cursor: pointer;
+  background-color: #a9f0bd; /* Змінюємо фон при наведенні */
+  cursor: pointer; /* Змінюємо курсор на "вказівник" */
+  color: #0e6f1e; /* Змінюємо колір тексту */
+  border-radius: 7px;
+  animation: bounce 0.5s; /* Додаємо анімацію підстрибування */
+  font-size: 22px;
+  list-style: disc;
 }
+
+li:hover::before {
+  content: "🐘 ";
+}
+
 h3 {
   text-align: center;
   margin-bottom: 30px;
 }
 
 .button-to-gallery {
-  /* display: inline-block; */
   margin: 0 auto;
   margin-bottom: 30px;
   padding: 15px 20px;
@@ -134,6 +146,7 @@ h3 {
   color: #0e5d6f;
   font-weight: bold;
   cursor: pointer;
+  transform: translateY(-5px);
 }
 
 .button-to-gallery a {
@@ -147,13 +160,16 @@ h3 {
 }
 
 button {
-  margin: 20px 40px 40px;
+  margin: 30px 40px 40px;
   padding: 15px 20px;
   min-width: 210px;
   display: block;
   border: 2px solid #0e5d6f;
   background-color: #7ccbdc;
   border-radius: 50%;
+  font-family: inherit; /* Наслідує шрифт з body */
+  font-size: 22px;
+  color: #0e5d6f;
   transition: all 100ms ease;
 }
 button:hover {
@@ -162,6 +178,7 @@ button:hover {
   color: #0e5d6f;
   font-weight: bold;
   cursor: pointer;
+  transform: translateY(-5px);
 }
 strong {
   display: block;
